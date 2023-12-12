@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // let data = [20,30,10,6,89,2,70,32];
+        // console.warn(data)
+        // let item = 2;
+        // let index= undefined;   
+        // for(i=0;i<data.length-1;i++){
+        //     // console.warn(data[i])
+        //     if(data[i]===item)
+        //     {
+        //         index=i
+        //         break;
+        //     }
+        // }
+        // console.warn(index);
+        // console.warn(data.indexOf(item));
+        // data.splice(2,1)
+        // console.warn(data);
+        function searchElement(){
+            let data = [20,30,10,6,89,2,70,32];
+            // console.warn(data)
+            let item = document.getElementById('searchEl').value;
+            
+            let index= undefined;   
+            for(i=0;i<=data.length-1;i++){
+                // console.warn(data[i])
+                if(data[i]==item)
+                {
+                    index=i
+                    break;
+                }
+            }
+            console.warn(index);
+            }
+
+    </script>
+</head>
+<body>
+    <input type="text" placeholder="enter value" id="searchEl">
+    <button onclick="searchElement()" >Search Element</button>
+</body>
+</html>
